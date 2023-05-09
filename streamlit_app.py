@@ -16,6 +16,6 @@ my_fruit_list=my_fruit_list.set_index('Fruit')
 streamlit.multiselect("Pick Some Fruits:",list(my_fruit_list.index))
 
 # include fruit in the query itself and select that fruits
-stremlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])
+streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])
 # Display the table on the page
 streamlit.dataframe(my_fruit_list)
